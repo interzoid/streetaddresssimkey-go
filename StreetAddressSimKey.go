@@ -24,7 +24,7 @@ type payload struct {
 
 // this function takes a company name and an API license key and returns the generated similarity key
 func GetSimKey(license,address string) (string, string, string, error) {
-  response, err := http.Get("https://api.interzoid.com/getaddressmatchadvanced?license="+url2.QueryEscape(license)+"&address="+url2.QueryEscape(company)+"&algorithm=narrow")
+  response, err := http.Get("https://api.interzoid.com/getaddressmatchadvanced?license="+url2.QueryEscape(license)+"&address="+url2.QueryEscape(address)+"&algorithm=narrow")
   
   if err != nil || response.StatusCode != 200 {
   	switch response.StatusCode {
