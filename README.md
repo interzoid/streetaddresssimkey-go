@@ -11,9 +11,13 @@ To generate the similarity key, you will need the following information:
 - an API License key, available at https://www.interzoid.com
 - a street address to generate the similarity key for
 
-Begin by importing the package:
+Begin by retrieving the package:
 
-    import "github.com/interzoid/streetaddresssimkey-go"
+    go get "github.com/interzoid/streetaddresssimkey-go"
+
+Import the package into your code:
+
+    import "github.com/interzoid/streetaddresssimkey-go"    
 
 Then, provide a street address into the GetSimKey() method:
 
